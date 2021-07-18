@@ -134,6 +134,9 @@ public class Main {
 			}
 			if(enterChat(chatRooms)){
 				return;
+			}else{
+				System.out.println("There is no chat room with such name. Try again!");
+				publicChat();
 			}
 		}else if(choice == 2){
 			System.out.println("Select at least 2 users (input separated with coma and space) to create chat room: ");
